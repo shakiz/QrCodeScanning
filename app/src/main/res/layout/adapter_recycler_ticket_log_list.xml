@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/TicketNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/md_grey_800"
+                android:text="@string/ticket_no_hint"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="48dp"
+                android:background="@color/md_grey_400"/>
+
+            <TextView
+                android:id="@+id/ScanTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:textSize="16sp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/md_grey_800"
+                android:text="@string/scan_time_hint"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="48dp"
+                android:background="@color/md_grey_400"/>
+
+            <TextView
+                android:id="@+id/Status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/md_grey_800"
+                android:text="@string/status_hint"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@color/md_grey_400"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -12,4 +12,12 @@
     <string name="email">Email</string>
     <string name="email_hint">chrissmorris@gmail.com</string>
     <string name="show_ticket_log">Show ticket log</string>
+    <string name="noData">No ticket has been scanned yet</string>
+    <string name="date_hint">23rd Jan 2020</string>
+    <string name="ticket_no">Ticket No.</string>
+    <string name="scan_time">Scan Time</string>
+    <string name="status">Status</string>
+    <string name="ticket_no_hint">0001</string>
+    <string name="scan_time_hint">5:46:15 PM</string>
+    <string name="status_hint">Valid</string>
 </resources>

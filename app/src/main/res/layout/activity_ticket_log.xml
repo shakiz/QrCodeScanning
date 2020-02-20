@@ -1,9 +1,94 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TicketLogActivity">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/CurrentDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:padding="4dp"
+        android:layout_margin="4dp"
+        android:textColor="@color/md_grey_700"
+        android:text="@string/date_hint"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="4dp"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/md_grey_200"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:ellipsize="end"
+            android:textColor="@color/md_grey_800"
+            android:text="@string/ticket_no"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/md_grey_200"
+            android:padding="12dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:textSize="16sp"
+            android:ellipsize="end"
+            android:textColor="@color/md_grey_800"
+            android:text="@string/scan_time"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/md_grey_200"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:ellipsize="end"
+            android:textColor="@color/md_grey_800"
+            android:text="@string/status"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/SadIcon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_sad_2"
+        android:visibility="gone"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/NoDataMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/md_grey_800"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:layout_margin="4dp"
+        android:text="@string/noData"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ticketLogList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        tools:listitem="@layout/adapter_recycler_ticket_log_list"
+        android:visibility="visible" />
+
+</LinearLayout>

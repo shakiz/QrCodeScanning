@@ -23,6 +23,13 @@ public class Ticket {
     @JsonProperty("status")
     private String status;
 
+    public Ticket(String ticket_id, String scan_date, String scan_time, String status) {
+        this.ticket_id = ticket_id;
+        this.scan_date = scan_date;
+        this.scan_time = scan_time;
+        this.status = status;
+    }
+
     @JsonProperty("ticket_id")
     public String getTicket_id() {
         return ticket_id;
