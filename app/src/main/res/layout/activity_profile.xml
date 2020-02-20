@@ -103,6 +103,7 @@
                                 android:text="@string/name"/>
 
                             <TextView
+                                android:id="@+id/Name"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textColor="@color/md_white_1000"
@@ -127,6 +128,7 @@
                                 android:text="@string/dob"/>
 
                             <TextView
+                                android:id="@+id/DOB"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textColor="@color/md_white_1000"
@@ -151,6 +153,7 @@
                                 android:text="@string/phone"/>
 
                             <TextView
+                                android:id="@+id/Mobile"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textColor="@color/md_white_1000"
@@ -175,6 +178,7 @@
                                 android:text="@string/email"/>
 
                             <TextView
+                                android:id="@+id/Email"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textColor="@color/md_white_1000"

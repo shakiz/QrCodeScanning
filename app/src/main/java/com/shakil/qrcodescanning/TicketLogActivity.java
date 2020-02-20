@@ -103,7 +103,7 @@ public class TicketLogActivity extends AppCompatActivity {
 
     private void getLog() {
         String url = "http://157.245.231.80/api/test/android/scan-log/";
-        allApiService = APIClient.getClient().create(AllApiService.class);
+        allApiService = APIClient.getClient(url).create(AllApiService.class);
 
         Call<ArrayList<Ticket>> call = allApiService.getTicketLogs(url);
         call.enqueue(new Callback<ArrayList<Ticket>>() {
@@ -125,6 +125,11 @@ public class TicketLogActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(TicketLogActivity.this,SuccessActivity.class));
     }
 
 }

@@ -81,4 +81,9 @@ public class QrCodeScanActivity extends AppCompatActivity {
         codeScanner.releaseResources();
         super.onPause();
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
 }
