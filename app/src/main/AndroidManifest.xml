@@ -13,9 +13,13 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:supportsRtl="true"
         android:theme="@style/AppThemeNoActionBar">
-        <activity android:name=".TicketLogActivity"></activity>
+
+        <activity android:name=".TicketLogActivity"/>
+
         <activity android:name=".ProfileActivity" />
+
         <activity android:name=".onboard.MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

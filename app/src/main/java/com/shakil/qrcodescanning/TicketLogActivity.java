@@ -4,15 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.shakil.qrcodescanning.adapter.TicketLogListAdapter;
 import com.shakil.qrcodescanning.model.Ticket;
+import com.shakil.qrcodescanning.onboard.MainActivity;
 import java.util.ArrayList;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -24,6 +25,7 @@ public class TicketLogActivity extends AppCompatActivity {
     private AllApiService allApiService;
     private ImageView sadIcon;
     private TextView noData;
+    private ImageView back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,9 +38,17 @@ public class TicketLogActivity extends AppCompatActivity {
     private void initUI() {
         sadIcon = findViewById(R.id.SadIcon);
         noData = findViewById(R.id.NoDataMessage);
+        back = findViewById(R.id.back);
         ticketLogList = new ArrayList<>();
 
         new BackgroundDataLoad().execute();
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(TicketLogActivity.this, MainActivity.class));
+            }
+        });
     }
 
     private void loadListView() {
