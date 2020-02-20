@@ -13,7 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import com.shakil.qrcodescanning.adapter.TicketLogListAdapter;
 import com.shakil.qrcodescanning.model.Ticket;
-import com.shakil.qrcodescanning.onboard.MainActivity;
+import com.shakil.qrcodescanning.onboard.SuccessActivity;
 import java.util.ArrayList;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -46,7 +46,7 @@ public class TicketLogActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(TicketLogActivity.this, MainActivity.class));
+                startActivity(new Intent(TicketLogActivity.this, SuccessActivity.class));
             }
         });
     }

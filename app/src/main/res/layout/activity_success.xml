@@ -56,6 +56,7 @@
             android:weightSum="1">
 
             <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/faceIcon"
                 android:layout_width="96dp"
                 android:layout_height="96dp"
                 android:src="@drawable/face_happy"
@@ -73,12 +74,14 @@
                 android:gravity="center">
 
                 <ImageView
+                    android:id="@+id/successOrFailedIcon"
                     android:layout_width="36dp"
                     android:layout_height="36dp"
                     android:padding="4dp"
                     android:src="@drawable/ic_success"/>
 
                 <TextView
+                    android:id="@+id/successOrFailedText"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="16dp"

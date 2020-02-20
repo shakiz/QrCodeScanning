@@ -21,4 +21,5 @@
     <string name="scan_time_hint">5:46:15 PM</string>
     <string name="status_hint">Valid</string>
     <string name="ticket_log">Ticket Log</string>
+    <string name="invalid">Invalid</string>
 </resources>
