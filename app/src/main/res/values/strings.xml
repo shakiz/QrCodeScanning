@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">QrCodeScanning</string>
+    <string name="success">Success</string>
+    <string name="scan_again">Scan again</string>
+    <string name="profile">Profile</string>
+    <string name="name">Name</string>
+    <string name="name_hint">Chirss Morris</string>
+    <string name="dob">Date Of Birth</string>
+    <string name="dob_hint">29 Feb 2020</string>
+    <string name="phone">Phone</string>
+    <string name="phone_hint">+880 1758621452</string>
+    <string name="email">Email</string>
+    <string name="email_hint">chrissmorris@gmail.com</string>
+    <string name="show_ticket_log">Show ticket log</string>
+</resources>
